@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+body {
+  background-image:url("23.gif");
+  background-attachment: fixed;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size: cover;
+}
+
+#mySidenav a {
+  position: absolute;
+
+  left: -80px; 
+  transition: 0.3s; 
+  padding: 15px; 
+  width: 100px; 
+  text-decoration: none;
+  font-size: 20px;
+  color: black; 
+  border-radius: 0 5px 5px 0;
+  position: fixed;
+}
+
+#mySidenav a:hover {
+  left: 0; 
+}
+
+
+#about {
+  top: 50px;
+  background-color:grey;
+}
+
+#blog {
+  top: 100px;
+  background-color: white;
+}
+
+#projects {
+  top: 150px;
+  background-color: grey;
+}
+
+h1 {
+  text-shadow: 2px 3px black;  
+  font-size: 80px;
+  color: white;
+  font-family: monospace;
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 1px;
+  letter-spacing: .15em;
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+.header {
+  padding-top: 80px;
+  padding-left: 80px;
+}
+
+.image {
+  flex-basis: 40%
+}
+.text {
+  color: black;
+  font-size: 20px;
+  padding-left: 10px;
+}
+.main {
+  max-width: 1000px;
+  margin: auto; 
+  }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 10px;
+  font-family: 'Forte'
+}
+h1 {
+  font-size: 50px;
+  word-break: break-word;
+}
+.row {
+  margin: 100px -16px;
+    transition: 0.3s;
+}
+.row,
+.row > .column {
+  padding: 8px;
+    transition: 0.5s;
+    margin-bottom: 10px;
+}
+.column {
+  float: left;
+  width: 50%;
+  transition: 0.5s;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+   transition: 0.5s;
+}
+.content {
+  background-color: rgb(251, 194, 250);
+  padding: 20px;
+  border-radius: 50px 25px;
+  transition: 0.5s;
+}
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    transition: 0.5s;
+  }
+}
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+.column:hover {
+  transform: scale(1.05);
+}
+p {
+  font-family: 'Poppins', sans-serif;
+  transition: 0.3s;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: black;
+}
+a:hover {
+  color: white;
+}
+p:hover {
+  color: #e6dfdf;
+}
